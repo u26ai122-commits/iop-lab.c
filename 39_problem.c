@@ -1,21 +1,16 @@
 #include<stdio.h>
-int factorial(int n){
-    int fact = 1;
-    for(int i=1;i<=n;i++){
-        fact=fact*i;
-    }
-    return fact;
-}
 
 int main(){
-     int i,n;
-        float series=0.0;
-        scanf("%d",&n);
-               
-        for(i=1;i<=n;i++){
-            series=series+((float)i/factorial(i));
+    int i,j;
+    for(i=1;i<=5;i++){
+        for(j=5;j>i;j--){
+            printf(" ");
 
         }
-        printf("%f",series);
-        
+    for(j=5;j>5-i;j--){
+        printf("*");
+
+    }
+    printf("\n");
+}
 }

@@ -1,10 +1,13 @@
 #include<stdio.h>
 
 int main(){
-    int i;
-    for(i=1;i<10;i++){
-    if(i%2!=0){
-        printf("%d\t",i);
-    }
-}
+  int i,j;
+  char ch;
+  for(i=1;i<=5;i++){
+     char ch='A';
+    for(j=1;j<=i;j++){
+      printf("%c",ch);
+      ch++;
+    }printf("\n");
+  }  
 }
